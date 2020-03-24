@@ -1,18 +1,25 @@
 module.exports = {
-  title: "Frontend guidelines",
-  description: "I've got another confession to make",
+  title: "Devbridge Frontend",
+  description: "Where Devbridge frontend folk meet and share their wisdom",
   toc: { includeLevel: [1, 2] },
-  children: ["/foo/Foo"],
+  children: ["/docs"],
   themeConfig: {
     sidebarDepth: 2,
     displayAllHeaders: true,
     sidebar: [
       {
-        title: "Project", // required
-        path: "/Project/", // optional, which should be a absolute path.
-        collapsable: true, // optional, defaults to true
-        sidebarDepth: 2, // optional, defaults to 1
-        children: ["/Project/components", "/Project/styles"]
+        title: "Knowledge share", // required
+        path: "/docs/KnowledgeShare/", // optional, which should be a absolute path.
+        collapsable: false, // optional, defaults to true
+        sidebarDepth: 1, // optional, defaults to 1
+        children: ["/docs/KnowledgeShare/Introduction"]
+      },
+      {
+        title: "Guidelines", // required
+        path: "/docs/Guidelines/", // optional, which should be a absolute path.
+        collapsable: false, // optional, defaults to true
+        sidebarDepth: 1, // optional, defaults to 1
+        children: ["/docs/Guidelines/Introduction"]
       }
     ],
     nav: [
