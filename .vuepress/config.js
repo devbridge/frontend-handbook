@@ -1,7 +1,7 @@
 module.exports = {
   title: "Devbridge Frontend",
   description: "Where Devbridge frontend folk meet and share their wisdom",
-  toc: { includeLevel: [1, 2] },
+  toc: { includeLevel: [1, 2, 3] },
   children: ["/docs"],
   themeConfig: {
     sidebarDepth: 2,
@@ -20,7 +20,17 @@ module.exports = {
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1, // optional, defaults to 1
         children: ["/docs/Guidelines/Introduction"]
-      }
+      },
+      {
+        title: "CSS",
+        sidebarDepth: 3, // optional, defaults to 1
+        // path: "/docs/CSS/", // optional, which should be a absolute path.
+        // collapsable: false,
+        children: [
+          ["/docs/CSS/position", "Position"],
+          ["/docs/CSS/z-index", "Z-Index"],
+        ]
+      },
     ],
     nav: [
       { text: "Home", link: "/" },
@@ -29,5 +39,6 @@ module.exports = {
     ],
     editLinks: true,
     editLinkText: "Help us improve this page!"
-  }
+  },
+  plugins: ['demo-code'],
 };
