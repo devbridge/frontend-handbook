@@ -17,7 +17,7 @@ There are 5 available CSS `position:` values:
   position: relative; // relative to itself
   position: absolute; // relative to it's closest non-static parent element
   position: fixed; // relative to viewport
-  position: sticky; // acts as relative and switches to fixed
+  position: sticky; // acts as relative and switches to absolute
 }
 ```
 
@@ -70,18 +70,21 @@ You can also apply `z-index` property to move element forward/back in [Stacking 
 Element with `position: fixed` is relative to viewport and stays in the same place when scrolling.
 
 It's behavior is almost identical to [Absolute](#absolute).\
-The key difference is that it doesn't care about ancestor structure or posirioning.\
+The key difference is that it doesn't care about ancestor structure or positioning.\
 No matter how deep the element is in the DOM, it will be always positioned according to viewport.
 
 [Stacking Order](todo) can be tricky as `fixed` element's `z-index` 'competes' with children and ancestors.
 
 ## Sticky
 
-`position: sticky` acts as `relative` and switches to `fixed` when a scroll offset is met.
+`position: sticky` acts as `relative` and switches to a variant of `absolute` and `fixed` when a scroll offset is met.
 
+It's parent element defines it's boundaries - where it should start and stop being sticky.\
 Scroll offset is defined by `top` or `bottom` properties when scrolling is vertical.\
 Scroll offset must be set to `0` or to any value as in `position: relative` in order to work.\
-Sticking won't work if `top` or `bottom` is not set or if any of ancestor elements  has `overflow` set.
+
+Sticking won't work if `top` or `bottom` is not set or if any of ancestor elements  has `overflow` set.\
+It won't work if parent element's height (if scroll is in vertical axis) is equal to sticky element's height.\
 
 #### Resources
 
