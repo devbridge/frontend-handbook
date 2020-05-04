@@ -3,8 +3,8 @@
 Intro text
 
 ::: tip 🤔Caveats and pitfalls
-- Cannot be acceses with JS
-- Some elements dont' have pseudo elements (<input>, <canvas>, <img>)
+- Some elements don't have pseudo elements (<input>, <canvas>, <img>)
+
 ## Pseudo-elements
 
 - Static elemetns

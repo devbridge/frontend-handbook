@@ -28,6 +28,7 @@ module.exports = {
         // collapsable: false,
         children: [
           ["/docs/CSS/position", "Position"],
+          ["/docs/CSS/selectors", "Selectors"],
           ["/docs/CSS/z-index", "Z-Index"],
         ]
       },

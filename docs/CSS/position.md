@@ -5,8 +5,8 @@
 - `z-index`, `top`, `bottom`, `left`, `right` works only on non-static elements.
 - `top | bottom` and `left | right` values should always be set explicitly (or to `0`).
 - `position: absolute` is relative to it's closest non-static ancestor and not to it's parent.
-- `width` of `position: absolute` and `position: fixed` element is calculated from it's contents.
-- `position: sticky` won't work if `top` or `bottom` is not set or if any of ancestor elements has `overflow` set.
+- `width` of `absolute` and `fixed` element is calculated from it's contents.
+- `position: sticky` won't work if `top` or `bottom` is not set and if any of ancestor elements has `overflow` set.
 :::
 
 There are 5 available CSS `position:` values:
