@@ -13,7 +13,7 @@ It must be applied to another selector i.e. `.btn:hover`, `input:focus`.\
 It selects HTML elements with certain UI state (i.e. `:focus`, `:active`, `:valid`) or in specific DOM position context (i.e. `:root`, `:first-child`, `:not()`).\
 Pseudo-class selectors do not work in JS.
 
-State-related pseudo-classes can be only applied to certain HTML elements, i.e. `:checked` is only valid for `checkbox` and `radio` inputs. `:focus` is valid for form controls and elements with `tabindex` and `contenteditable` attributes.
+State-related pseudo-classes can be only applied to certain HTML elements, i.e. `:checked` is only valid for `checkbox` and `radio` inputs. `:focus` is valid for form controls and elements with `tabindex` or `contenteditable` attributes.
 
 When an element's state changes (i.e. element gets `:hover`, `:checked` etc), it's possible to change not only the element itself, but also use it's context. For example, when you `:hover` an ancestor element (`.container`), it also updates style of the nested button.
 
@@ -84,9 +84,9 @@ Note how labels keep being stuck when inputs have text, even though they lose fo
 
 Selectors which start with `:nth-` are functional pseudo-classes that takes parameters how to select elements from the same parent.\
 - **`:nth-child()`** (the most common one)
+- `:nth-of-type()`
 - `:nth-last-child()`
 - `:nth-last-of-type()`
-- `:nth-of-type()`
 
 Parameters could be either with _even_/_odd_ keywords (i.e. `:nth-child(even)`, `:nth-child(odd)`)  or a formula `:nth-child(An + B)`, where **A** is iteration step size and **B** is start offset.
 
