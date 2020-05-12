@@ -1,8 +1,8 @@
-# Selectors
+# Selector
 
 ::: tip 🤔Caveats and pitfalls
 - A selector can be combined, nested and grouped, thus becoming a complex string. 
-- Nesting and adding combinators `>`, `~`, `+` increase specifitiy and selectors become difficult to maintain. It should be **avoided**.
+- Nesting and adding combinators `>`, `~`, `+` increase specifity and selectors become difficult to maintain. It should be **avoided**.
 - ID selectors styling should avoided as it's not reusable and very aggresive specifity-wise.
 - Every selector selects _all_ corresponding items. 
   :::
@@ -24,7 +24,7 @@ Every selector selects _all_ corresponding items.
 
 ## Types
 
-- **id** - starts with `#`, i.e. `#my-element` selects `<div id="my-element"></div>`;
+- **ID** - starts with `#`, i.e. `#my-element` selects `<div id="my-element"></div>`;
 - **class** - starts with `.`, i.e. `.my-element` selects `<div class="my-element"></div>`;
 - **element** - element's name minus angle (`<` `>`) brackets, i.e. `body`, `div`, `img`;
 - **universal** - `*` symbol (wildcard), selects all the elements;
@@ -38,7 +38,8 @@ It can contain attribute's value as well, i.e.:\
 
 Selector string can contain multiple expressions i.e. `input.my-input[disabled]`.\
 It can also contain multiple expressions of the same type i.e. `input.first-class.second-class`.\
-_Note no space between expressions._\
+_Note no space between expressions._
+
 Adding more data to selector increases **specifity** - targeting elements more accurately,\
 filtering out similar elements which don't match the selector exactly.
 
@@ -65,13 +66,12 @@ Target element for selector will always be the last part of expression, right af
 Adding nesting to selector increases specifity. This should be avoided if not neccessary.\
 It's quite easy to overlook as CSS preprocessors (i.e. SCSS) makes nesting effortless.
 
-
 ## Combinators
 
 - `>` selects **all children** elements which have first part of selector as _direct parent_ element.\
 _Direct child combinator_: \
 `div > p` selects **all** `p` elements with `div` as their direct parent element.\
-`>` does not affect deeper-neslsted descendants.
+`>` does not affect deeper-nested descendants.
 
 - `+` selects **first** element which has the same parent and comes  _after_ first part of selector.\
 _Adjacent sibling combinator_: \
@@ -79,15 +79,15 @@ _Adjacent sibling combinator_: \
 
 - `~` selects **all** elements which have the same parent and come _after_ first part of selector.\
 _General sibling combinator_: \
-`div ~ p` selects all the `p` elements with the same parent as `div`, coming right _after_ that `div`. 
+`div ~ p` selects **all** the `p` elements with the same parent as `div`, coming right _after_ that `div`. 
 
 Adding combinators to selector increases specifity. This should be avoided if not neccessary.
 
-## Merging
+## Grouping
 
-Selectors may be merged with `,` symbol.\
+Selectors may be grouped with `,` symbol.\
 i.e. `img, .some-class` is a valid selector which selects **all** `<img>` elements **and** all elements which have class `some-class`.\
-It's possible to merge selectors of any specifity level.
+It's possible to group selectors of any specifity level.
 
 
 ## ID selectors in CSS

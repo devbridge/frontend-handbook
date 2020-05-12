@@ -28,7 +28,9 @@ module.exports = {
         // collapsable: false,
         children: [
           ["/docs/CSS/position", "Position"],
-          ["/docs/CSS/selectors", "Selectors"],
+          ["/docs/CSS/pseudo-class", "Pseudo-class"],
+          ["/docs/CSS/pseudo-element", "Pseudo-element"],
+          ["/docs/CSS/selector", "Selector"],
           ["/docs/CSS/z-index", "Z-Index"],
         ]
       },
