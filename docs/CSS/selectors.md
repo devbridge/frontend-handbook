@@ -1,8 +1,10 @@
 # Selectors
 
 ::: tip 🤔Caveats and pitfalls
-
-- TODO
+- A selector can be combined, nested and grouped, thus becoming a complex string. 
+- Nesting and adding combinators `>`, `~`, `+` increase specifitiy and selectors become difficult to maintain. It should be **avoided**.
+- ID selectors styling should avoided as it's not reusable and very aggresive specifity-wise.
+- Every selector selects _all_ corresponding items. 
   :::
 
 ## Usage
@@ -23,14 +25,14 @@ Every selector selects _all_ corresponding items.
 ## Types
 
 - **id** - starts with `#`, i.e. `#my-element` selects `<div id="my-element"></div>`;
-- **class** - starts with `.`, i.e. `.myElement` selects `<div class="my-element"></div>`;
+- **class** - starts with `.`, i.e. `.my-element` selects `<div class="my-element"></div>`;
 - **element** - element's name minus angle (`<` `>`) brackets, i.e. `body`, `div`, `img`;
 - **universal** - `*` symbol (wildcard), selects all the elements;
 - **attribute** - element's attribute, enclosed in square (`[` `]`) brackets. i.e.:\
 `[disabled]` selects `<input type="text" disabled />` \
 It can contain attribute's value as well, i.e.:\
 `[name="address"]` selects `<input type="text" name="address" />`
-- **pseudo** - starts with `:` and selects pseudo elements invisible in DOM tree i.e. `:before`
+- **pseudo** - starts with `:` and selects [pseudo](./pseudoselectors.md) elements invisible in DOM tree i.e. `:before`
 
 ## Specifity
 
@@ -69,7 +71,7 @@ It's quite easy to overlook as CSS preprocessors (i.e. SCSS) makes nesting effor
 - `>` selects **all children** elements which have first part of selector as _direct parent_ element.\
 _Direct child combinator_: \
 `div > p` selects **all** `p` elements with `div` as their direct parent element.\
-`>` does not affect deeper-nested descendants.
+`>` does not affect deeper-neslsted descendants.
 
 - `+` selects **first** element which has the same parent and comes  _after_ first part of selector.\
 _Adjacent sibling combinator_: \
@@ -102,3 +104,5 @@ Because they are so aggressive, it's considered a bad practice to use CSS on ID 
 - [CSS Selector Reference on W3Schools](https://www.w3schools.com/cssref/css_selectors.asp)
 - [Child and Sibling Selectors on CSS tricks](https://css-tricks.com/child-and-sibling-selectors/)
 - [Understand ‘+’, ‘>’ and ‘~’ symbols in CSS Selector](https://techbrij.com/css-selector-adjacent-child-sibling)
+- [Specificity on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+- [Cascade and inheritance on MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#Specificity_2)

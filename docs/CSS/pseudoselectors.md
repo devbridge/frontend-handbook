@@ -1,6 +1,6 @@
 # Pseudoselectors
 
-Intro text
+
 
 ::: tip 🤔Caveats and pitfalls
 - Some elements don't have pseudo elements (<input>, <canvas>, <img>)
