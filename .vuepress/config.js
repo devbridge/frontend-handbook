@@ -25,8 +25,9 @@ module.exports = {
         title: "CSS",
         sidebarDepth: 3, // optional, defaults to 1
         // path: "/docs/CSS/", // optional, which should be a absolute path.
-        // collapsable: false,
+        collapsable: false,
         children: [
+          ["/docs/CSS/browser-styles", "Browser Styles"],
           ["/docs/CSS/position", "Position"],
           ["/docs/CSS/pseudo-class", "Pseudo-class"],
           ["/docs/CSS/pseudo-element", "Pseudo-element"],
