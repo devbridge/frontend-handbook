@@ -1,4 +1,4 @@
-# Box Sizing
+# Box Sizing - WIP
 
 ::: tip 🤔Caveats and pitfalls
 - Default `box-sizing` value is `content-box` for all HTML elements. Even though the best practice is to set it to `border-box`.
@@ -10,10 +10,7 @@
 
 #### An excellent playground from MDN:
 
-
 <iframe width="100%" height="353px" src="https://interactive-examples.mdn.mozilla.net/pages/css/box-sizing.html"></iframe>
-
-
 
 #### Resources
 
