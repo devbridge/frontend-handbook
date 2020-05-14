@@ -1,4 +1,4 @@
-# Default Browser Engine styles
+# Default styles
 
 ::: tip 🤔Caveats and pitfalls
 - Each browser interprets W3C rendering standards via own _Browser (Rendering) Engine_

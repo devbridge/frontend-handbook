@@ -27,7 +27,7 @@ module.exports = {
         // path: "/docs/CSS/", // optional, which should be a absolute path.
         collapsable: false,
         children: [
-          ["/docs/CSS/browser-styles", "Browser Styles"],
+          ["/docs/CSS/default-styles", "Default Styles"],
           ["/docs/CSS/position", "Position"],
           ["/docs/CSS/pseudo-class", "Pseudo-class"],
           ["/docs/CSS/pseudo-element", "Pseudo-element"],
