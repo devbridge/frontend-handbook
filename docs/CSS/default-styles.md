@@ -2,7 +2,7 @@
 
 ::: tip 🤔Caveats and pitfalls
 - Each browser interprets W3C rendering standards via own _Browser (Rendering) Engine_
-- Every HTML element has a default style set by _Browser Engine_. It could differ by browser and can be made consistant via [normalize](https://necolas.github.io/normalize.css/).
+- Every HTML element has a default style set by _Browser Engine_. It could differ by browser and can be made consistent via [normalize](https://necolas.github.io/normalize.css/).
 - Every HTML element has predefined initial default value for each CSS property. 
 - Vendor prefixes are used to 'flag' at-that-time experimental and non-standartized features.
 - To target specific browser with CSS, use [Browser Hacks](http://browserhacks.com/).
@@ -34,7 +34,7 @@ Each [browser engine](#browser-engine) has it's own default style rules:
 Most of them are the same, i.e. `body` has `margin: 8px` and all tags in `head` (like `link`, `meta` etc) have `display: none` in every browser engine.
 
 There are some differences, i.e. styling of `button` or focus state of inputs across differenet engines.\
-To solve those inconsistencies there's a tool called **[normalize](https://necolas.github.io/normalize.css/)** which sets opionated defaults.
+To solve those inconsistencies there's a tool called **[normalize](https://necolas.github.io/normalize.css/)** which sets opinionated defaults.
 
 ## Default element styles
 
