@@ -1,7 +1,7 @@
 {
   "name": "frontend-handbook",
   "version": "1.1.0",
-  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "description": "Hand-picked and organized selection of tips and solutions to some recurring problems in frontend development.",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://RokasDBG@bitbucket.org/devbridge/frontend-guidelines.git"
+    "url": "git+https://github.com/devbridge/frontend-handbook.git"
   },
   "keywords": [],
   "contributors": [
@@ -19,7 +19,7 @@
     "Algirdas Tamasauskas"
   ],
   "license": "ISC",
-  "homepage": "https://bitbucket.org/devbridge/frontend-guidelines#readme",
+  "homepage": "https://github.com/devbridge/frontend-handbooks#readme",
   "dependencies": {
     "vuepress": "^1.5.0"
   }
