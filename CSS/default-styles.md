@@ -33,7 +33,7 @@ Each [browser engine](#browser-engine) has it's own default style rules:
 
 Most of them are the same, i.e. `body` has `margin: 8px` and all tags in `head` (like `link`, `meta` etc) have `display: none` in every browser engine.
 
-There are some differences, i.e. styling of `button` or focus state of inputs across differenet engines.\
+There are some differences, i.e. styling of `button` or focus state of inputs across different engines.\
 To solve those inconsistencies there's a tool called **[normalize](https://necolas.github.io/normalize.css/)** which sets opinionated defaults.
 
 ## Default element styles

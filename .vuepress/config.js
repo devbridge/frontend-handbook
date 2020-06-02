@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/frontend-handbook/',
   title: "Frontend Handbook",
   description: "Where Devbridge frontend folk meet and share their wisdom",
   head: [["link", { rel: "icon", href: "/assets/img/DB_square.png" }]],
@@ -9,12 +10,12 @@ module.exports = {
       {
         title: "CSS",
         children: [
-          ["/docs/CSS/default-styles", "Default Styles"],
-          ["docs/CSS/position", "Position"],
-          ["/docs/CSS/pseudo-class", "Pseudo-class"],
-          ["/docs/CSS/pseudo-element", "Pseudo-element"],
-          ["/docs/CSS/selector", "Selector"],
-          ["/docs/CSS/z-index", "Z-Index"],
+          ["/CSS/default-styles", "Default Styles"],
+          ["/CSS/position", "Position"],
+          ["/CSS/pseudo-class", "Pseudo-class"],
+          ["/CSS/pseudo-element", "Pseudo-element"],
+          ["/CSS/selector", "Selector"],
+          ["/CSS/z-index", "Z-Index"],
         ],
       },
     ],
